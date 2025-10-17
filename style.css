@@ -36,17 +36,17 @@
   display: flex;
 }
 .incomplete-list, .complete-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .list-item, .to-do-list, .done-list {
-  list-style:none;
+  list-style: none;
 }
 .to-do-list, .done-list {
-  list-style:none;
+  list-style: none;
 }
 .btn, input {
-  outline:none;
+  outline: none;
 }
 .btn {
   background: none;
@@ -120,7 +120,7 @@ label[for="new-task"] {
   font-size: 18px;
   width: 226px;
 }
-.list-item >    input[type="text"] {
+.list-item > input[type="text"] {
   width: 226px
 }
 .btn-delete-task img {
@@ -140,27 +140,27 @@ label[for="new-task"] {
 
 /* Edit Task */
 .incomplete-list .list-item input[type=text] {
-  display:none
+  display: none
 }
 
 .complete-list .list-item input[type=text] {
-  display:none
+  display: none
 }
 
 .incomplete-list .list-item.edit-mode input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .complete-list .list-item.edit-mode input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .incomplete-list .list-item.edit-mode label {
-  display:none;
+  display: none;
 }
 
 .complete-list .list-item.edit-mode label {
-  display:none;
+  display: none;
 }
