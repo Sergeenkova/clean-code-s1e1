@@ -15,7 +15,8 @@
   width: 100%;
 }
 
-.header .info {
+.header, 
+.info {
   font-family: fantasy, cursive;
 }
 
@@ -41,20 +42,15 @@
   display: flex;
 }
 
-.incomplete-list, .complete-list {
+.incomplete-list, 
+.complete-list {
   margin: 0;
   padding: 0px;
-}
-
-.list-item, .to-do-list, .done-list {
   list-style: none;
 }
 
-.to-do-list, .done-list {
-  list-style: none;
-}
-
-.btn, input {
+.btn, 
+input {
   outline: none;
 }
 
@@ -74,7 +70,7 @@
 
 /* Heading */
 .to-do-list, 
-.done-list,
+.done-list, 
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
