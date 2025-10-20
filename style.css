@@ -11,6 +11,10 @@
   text-align: right;
 }
 
+.page-title {
+  display: none;
+}
+
 .matrix {
   width: 100%;
 }
@@ -26,7 +30,7 @@
   }
 }
 
-.list-wrapper {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
