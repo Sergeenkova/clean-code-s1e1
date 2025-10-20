@@ -34,18 +34,20 @@ var createNewTaskElement=function(taskString){
 
     listItem.className="list-item";
     label.innerText=taskString;
-    label.className="task";
+    label.className="task-label";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="input task-checkbox";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="task-input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="btn btn-edit-task";
 
     deleteButton.className="btn btn-delete-task";
     deleteButtonImg.src="./remove.svg";
+    deleteButtonImg.className="remove-icon";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -83,8 +85,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector("input[type=text]");
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector(".task-input");
+    var label=listItem.querySelector(".task-label");
     var editBtn=listItem.querySelector(".btn-edit-task");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
@@ -148,7 +150,7 @@ var ajaxRequest=function(){
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 
@@ -156,7 +158,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
+    var checkBox=taskListItem.querySelector(".task-checkbox");
     var editButton=taskListItem.querySelector("button.btn-edit-task");
     var deleteButton=taskListItem.querySelector("button.btn-delete-task");
 
